@@ -1,0 +1,45 @@
+.team {
+    background-color: var(--secondary-page-color);
+
+    &__list {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    &__card {
+        margin-right: 30px;
+        border: transparent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: var(--accent-color);
+        border-radius: 3px;
+
+        &:last-child {
+            margin-right: 0%;
+        }
+    }
+
+    &__wrapper {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__player {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        font-size: 16px;
+        line-height: 1.19;
+        color: var(--primary-text-color);
+        margin-bottom: 16px;
+    }
+
+    &__social-network {
+        padding-left: 0;
+        margin-bottom: 0%;
+    }
+}
