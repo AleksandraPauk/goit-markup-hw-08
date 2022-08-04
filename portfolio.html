@@ -67,6 +67,7 @@
                 <a class="header__link" href="#">Контакты</a>
               </li>
             </ul>
+
             <ul class="list header__list-contacts">
               <li class="header__contact header__contact--little">
                 <a
@@ -74,7 +75,7 @@
                   href="mailto:info@devstudio.com"
                 >
                   <svg
-                    class="header__icon"
+                    class="header__icon header__icon--small-mail"
                     width="16px"
                     height="12px"
                     aria-hidden="true"
@@ -90,7 +91,7 @@
                   href="tel:+380961111111"
                 >
                   <svg
-                    class="header__icon"
+                    class="header__icon header__icon--small-phone"
                     width="10px"
                     height="16px"
                     aria-hidden="true"
@@ -101,6 +102,7 @@
                 </a>
               </li>
             </ul>
+
             <ul class="list header__list-social">
               <li class="header__social-item">
                 <a class="header__social-link" href="#">Instagram</a>
@@ -155,11 +157,31 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/Технокряк.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-1-480.jpg    1x,
+                        ./images/project-1-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-768.jpg    1x,
+                        ./images/project-1-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-1200.jpg    1x,
+                        ./images/project-1-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/project-1-480.jpg" alt="Технокряк" />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -176,11 +198,34 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/ПостерNewOrleanvsGoldenStar.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-2-480.jpg    1x,
+                        ./images/project-2-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-768.jpg    1x,
+                        ./images/project-2-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-1200.jpg    1x,
+                        ./images/project-2-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/project-2-480.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -198,11 +243,34 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/РесторанSeafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-3-480.jpg    1x,
+                        ./images/project-3-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-768.jpg    1x,
+                        ./images/project-3-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-1200.jpg    1x,
+                        ./images/project-3-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/project-3-480.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -218,11 +286,31 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/ПроектPrime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-4-480.jpg    1x,
+                        ./images/project-4-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-768.jpg    1x,
+                        ./images/project-4-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-1200.jpg    1x,
+                        ./images/project-4-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/project-4-480.jpg" alt="Проект Prime" />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -238,11 +326,31 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/ПроектBoxes.jpg"
-                    alt="роект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-5-480.jpg    1x,
+                        ./images/project-5-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-768.jpg    1x,
+                        ./images/project-5-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-1200.jpg    1x,
+                        ./images/project-5-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/project-5-480.jpg" alt="Проект Boxes" />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -258,11 +366,34 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/InspirationhasnoBorders.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-6-480.jpg    1x,
+                        ./images/project-6-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-768.jpg    1x,
+                        ./images/project-6-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-1200.jpg    1x,
+                        ./images/project-6-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/project-6-480.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -278,11 +409,34 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/ИзданиеLimitedEdition.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-7-480.jpg    1x,
+                        ./images/project-7-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-768.jpg    1x,
+                        ./images/project-7-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-1200.jpg    1x,
+                        ./images/project-7-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/project-7-480.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -298,11 +452,31 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/ПроектLAB.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-8-480.jpg    1x,
+                        ./images/project-8-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-768.jpg    1x,
+                        ./images/project-8-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-1200.jpg    1x,
+                        ./images/project-8-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/project-8-480.jpg" alt="Проект LAB" />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -318,11 +492,34 @@
             <li class="project__box">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/GrowingBusiness.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-9-480.jpg    1x,
+                        ./images/project-9-480-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9-768.jpg    1x,
+                        ./images/project-9-768-2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9-1200.jpg    1x,
+                        ./images/project-9-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/project-9-480.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -341,8 +538,8 @@
     </main>
 
     <!--Подвал-->
-    <footer class="footer container">
-      <div class="section">
+    <footer class="footer section">
+      <div class="footer__section container">
         <div class="footer__wrapper--first">
           <a class="logo footer__logo" href="./index.html"
             ><span class="logo__focus">Web</span>Studio</a
@@ -444,7 +641,7 @@
               for="client-email-footer"
               >Подпишитесь на рассылку</label
             >
-            <div class="footer__input--wrap">
+            <div class="footer__input-wrap">
               <input
                 class="footer__input"
                 type="email"
@@ -462,5 +659,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

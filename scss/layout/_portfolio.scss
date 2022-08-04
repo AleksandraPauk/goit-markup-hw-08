@@ -2,6 +2,18 @@
     background-color: var(--accent-color);
 
     &__button-list {
-        margin-bottom: 50px;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        @media (min-width: 768px) {
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        @media (min-width: 1200px) {
+            padding-bottom: 50px;
+            padding-top: 34px;
+        }
     }
 }

@@ -1,34 +1,35 @@
 .client {
+
     &__list {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        padding-left: 0;
-        margin-bottom: 0;
+        flex-wrap: wrap;
+        margin: -15px;
     }
 
     &__item {
-        margin-right: 30px;
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
 
-        &:last-child {
-            margin-right: 0%;
-        }
-}
+        @media (min-width: 768px) {
+                width: calc((100% - 3 * 30px) / 3);
+            }
+        @media (min-width: 1200px) {
+                width: calc((100% - 6 * 30px) / 6);
+            }
+    }
 
     &__link {
         display: flex;
+        height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-        width: 170px;
         transition: border 250ms var(--timing-function);
-
+        
         &:hover,
         &:focus {
             border: 1px solid var(--link-color)
         }
     }
-
     &__icon {
         fill: #AFB1B8;
         transition: fill 250ms var(--timing-function);
