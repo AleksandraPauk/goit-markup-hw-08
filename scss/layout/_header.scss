@@ -194,12 +194,16 @@
     &--grey {
       color: var(--primary-text-color);
 
-      @media (max-width: 388px) {
-        font-size: 30px;
-      }
       @media (min-width: 768px) {
         padding: 0;
         font-size: 12px;
+      }
+    }
+
+    &--blue {
+      color: var(--link-color);
+      @media (max-width: 388px) {
+        font-size: 30px;
       }
     }
 
