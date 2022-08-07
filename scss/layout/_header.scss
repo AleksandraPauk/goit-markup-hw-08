@@ -165,6 +165,12 @@
     &-link {
       text-decoration: none;
       color: var(--primary-text-color);
+      transition: color 250ms var(--timing-function);
+
+      &:hover,
+      &:focus {
+        color: var(--link-color);
+      }
 
       @media (min-width: 768px) {
         font-size: 12px;
@@ -265,11 +271,11 @@
     }
 
     @media (min-width: 768px) {
-      .header__link:hover & {
+      .header__contact-link:hover & {
         fill: var(--link-color);
       }
 
-      .header__link:focus & {
+      .header__contact-link:focus & {
         fill: var(--link-color);
       }
     }
